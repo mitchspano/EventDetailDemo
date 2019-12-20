@@ -6,11 +6,11 @@
             "c/eventDetailButton": [
                 "eventDetailButton/eventDetailButton.js"
             ],
-            "c/eventDetailDiv": [
-                "eventDetailDiv/eventDetailDiv.js"
-            ],
             "c/eventDetailDemonstration": [
                 "eventDetailDemonstration/eventDetailDemonstration.js"
+            ],
+            "c/eventDetailDiv": [
+                "eventDetailDiv/eventDetailDiv.js"
             ]
         }
     },
