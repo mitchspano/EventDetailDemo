@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/eventDetailButton": [
+                "eventDetailButton/eventDetailButton.js"
+            ],
+            "c/eventDetailDiv": [
+                "eventDetailDiv/eventDetailDiv.js"
+            ],
+            "c/eventDetailDemonstration": [
+                "eventDetailDemonstration/eventDetailDemonstration.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

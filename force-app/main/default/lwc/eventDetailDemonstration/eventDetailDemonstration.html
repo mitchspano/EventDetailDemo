@@ -1,0 +1,67 @@
+<template>
+  <div class="slds-box slds-theme_default slds-p-around_small">
+    <lightning-card title="Event Detail Button Click Demonstration">
+      <table class="slds-table slds-table_bordered slds-table_striped">
+        <thead>
+          <tr>
+            <th scope="col">
+              <div>First Name</div>
+            </th>
+            <th scope="col">
+              <div>Last Name</div>
+            </th>
+            <th scope="col">
+              <div>Action</div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <template for:each={people} for:item="person">
+            <tr key={person.id}>
+              <td>
+                <div>{person.firstName}</div>
+              </td>
+              <td>
+                <div>{person.lastName}</div>
+              </td>
+              <td>
+                <c-event-detail-button
+                  variant="brand"
+                  event-name="buttonclick"
+                  label="Display Profession"
+                  detail={person.profession}
+                  onbuttonclick={handleButtonClick}
+                >
+                </c-event-detail-button>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </lightning-card>
+    <lightning-card title="Event Detail Div Hover Demonstration">
+        <c-event-detail-div
+        class-name="slds-box slds-theme_default slds-p-around_small"
+        event-name="hovered"
+        detail="Lightning Card"
+        onhovered={handleDivHover}
+        >
+        <lightning-card title="Sample Lightning Card" slot="body">
+            Hover over me!
+        </lightning-card>
+        </c-event-detail-div
+        >
+        <c-event-detail-div
+        class-name="slds-box slds-theme_default slds-p-around_small"
+        event-name="hovered"
+        detail="Lightning Tile"
+        onhovered={handleDivHover}
+        >
+        <lightning-tile label="Sample Lightning Tile" href="/path/to/somewhere" slot="body">
+            <p class="slds-truncate" title="H">Hover over me!</p>
+        </lightning-tile>
+        </c-event-detail-div>
+
+    </lightning-card>
+  </div>
+</template>
