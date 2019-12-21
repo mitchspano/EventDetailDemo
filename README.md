@@ -5,7 +5,7 @@ Below is an example of the eventDetailButton component works alongside a similar
 ![Event Demo](demo/EventDetailDemo.gif)
 
 One of the biggest challenges in making the change  to Lightning Web Components is the lack of inline expression. For example, a developer might want to do something like this:
-<button onclick="handleButtonClick('Hello World');"></button>
+`<button onclick="handleButtonClick('Hello World');"></button>`
 
 This will not work with lightning web components. This is particularly frustrating when you have a collection of objects with buttons and want to do something particular to the object you pressed the button for.
 
